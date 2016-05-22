@@ -1,0 +1,8 @@
+.row{
+	margin-bottom: 15px;
+}
+
+.row > diV {
+	border: 2px solid lightblue;
+	background-color: gray;
+}

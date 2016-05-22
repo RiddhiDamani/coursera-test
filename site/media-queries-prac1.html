@@ -1,0 +1,196 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+    <style>
+    body {
+    	font-family: "Lucida Sans", Verdana, Sans-serif;
+    	background: url(t3.jpg) bottom no-repeat, url(t2.jpg) left top repeat;
+    	background-size: 300px, auto;
+    	background-origin: content-box;
+
+    }
+    
+    .main img {
+    	width: 100%
+    }  
+
+    h1{
+    	font-size: 1.6em;
+    }
+
+    h2{
+        font-size: 1.3em;
+    }
+    
+    .header{
+    	padding: 1.012%;
+    	background-color: lightgreen;
+    	opacity: 0.6;
+    	border: 1px solid #e9e9e9;
+    	border-radius: 50px;
+    	background: url("texture.jpg");
+    	text-align: center;
+    	
+    }
+
+    .menuitem{
+    	margin: 4.3%;
+    	margin-left: 0; 
+    	margin-top: 0; 
+    	padding: 4.3%;
+    	border: 2px solid orange;
+    	border-radius: 30px;
+    	cursor: pointer;
+    	background-color: orange;
+    	
+
+    }
+
+    .main{
+    	padding: 2.06%;
+    }
+
+    .right{
+    	padding: 4.31%;
+    	background-color: lightgreen;
+        border-image: url("bi1.png") 30%;
+        border-image-width: 10px;
+        border-image-outset: 4px;
+        border-image: stretched;
+        border-radius: 30px;
+
+
+    }
+
+    .footer{
+    	padding: 1.012%;
+    	text-align: center;
+    	background-color: lightgreen;
+    	border: 1px solid #da70d6;
+    	font-size: 0.625em;
+    }
+
+    .container{
+    	width: 100%;
+    }
+
+    .wrapper{
+    	overflow: hidden;
+    }
+
+    .gridbox{
+    	margin-bottom: 2.02%;
+    	margin-right: 2.02%;
+    	float: left;
+    }
+
+    .gridheader{
+    	width: 100%;
+    }
+
+    .gridmenu{
+    	width: 23.48%;
+    }
+
+    .gridmain{
+    	width: 48.98%;
+    }
+
+    .gridright{
+    
+   	     width: 23.48%;
+         margin-right: 0;
+    }
+
+    .gridfooter{
+    	width: 100%;
+    	margin-bottom: 0;
+
+    }
+
+    /************************* Media Queries Start ********************/
+
+    @media only screen and (max-width: 500px)
+    {
+    	.gridmenu{
+    		width: 100%;
+    	}
+
+    	.menuitem{
+    		margin: 1.01%;
+    		padding: 1.01%;
+    	}
+
+    	.gridmain{
+    		width: 100%;
+    	}
+
+    	.main{
+    		padding: 1.01%;
+    	}
+
+    	.gridright{
+    		width: 100%
+
+    	}
+
+    	.right{
+    		padding: 1.01%;
+    	}
+
+    	.gridbox{
+    		margin-right: 0;
+    		float: left;
+    	}
+    }
+
+    </style>
+</head>
+
+<body>
+	<div class="container">
+	   <div class="wrapper">
+	      <div class="gridbox gridheader">
+	         <div class="header">
+	           <h1>Siddhivinayak Temple Guide</h1>
+	         </div>
+	      </div>
+	    <div class="gridbox gridmenu">
+	       <div class="menuitem">The Drive</div>
+	       <div class="menuitem">The Walk</div>
+	       <div class="menuitem">The Return</div>
+	       <div class="menuitem">The End</div> 
+	    </div> 
+
+	    <div class="gridbox gridmain">
+	    <div class="main">
+	    <h1>The Walk</h1>
+	    <p>The walk to siddhivinayak temple from dadar station should be known prior to visit. If we know the exact distance from the source to the destination, when we know how much time it would take for us to travel that distance, the navigation is precise and fuel tank is full, would the journey not become a smoother affair? </p> 
+	    <img src="efg.jpg" alt="Ganeshji" width="" height="">
+	    <p>The convenience of learning about the distance between Dadar Railway Station to Siddhivinayak Temple is very helpful while traveling, which is, 5 mins (1 km 912 mtrs). The distance and travel time would change accordingly and also per the traffic and road conditions.</p>
+	    <img src="abcd.jpg" alt="route" width="" height="">
+        </div>
+	    </div>
+
+	    <div class="gridbox gridright">
+	    <div class="right">
+	 
+	    	<h2>What?</h2>
+	    	<p>Siddhivinayak is a very famous Ganpati Temple in Mumbai.</p>
+	    	<h2>Where?</h2>
+	    	<p>Dadar(East),Mumbai, India</p>
+	    	<h2>Price?</h2>
+	    	<p>The walk is absolutely free. It will take 5 mintues to reach.</p>
+	    </div>
+	    </div>
+	    <div class="gridbox gridfooter">
+	    <div class="footer">
+	    <p>This web page is a part of demonstration of fluid web design made by Riddhi Damani. Resize the browser window to see the content respone to the resizing.</p>
+	    </div>
+	    </div>	
+	    </div>
+	    </div>
+
+</body>
+</html>

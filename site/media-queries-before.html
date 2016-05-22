@@ -16,39 +16,71 @@ p {
 }
 #p1 {
   background-color: #A52A2A;
-  width: 300px;
-  height: 300px;
+  width: 80px;
+  height: 80px;
 }
 #p2 {
   background-color: #DEB887;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
 }
 
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+#leftsidebar{float:none;width: auto;}
+#menulist {margin: 0; padding: 0;}
+
+.menuitem{
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+
+
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  #p1 {
-    width: 80%;
+@media(min-width: 1200px){
+  #p1{
+    width: 40%;
   }
-  #p2 {
-    width: 150px;
-    height: 150px;
+
+  #p2{
+    width: 10px;
+    height: 10px;
   }
 }
+
 
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  #p1 {
-    width: 50%;
+@media (min-width: 992px) and (max-width: 1199px){
+  #p1{
+    width: 20%;
   }
-  #p2 {
-    width: 100px;
-    height: 100px;
+
+  #p2{
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/********** Small devices only ***********/
+
+@media screen and (min-width: 480px){
+  body{
+    background-color: lightgreen;
   }
 }
 
 
+@media screen and (min-width: 480px){
+  #leftsidebar{width: 200px;float: left;}
+  #main {margin-left: 200px;}
+}
 </style>
 </head>
 <body>
@@ -57,5 +89,21 @@ p {
 <p id="p1"></p>
 <p id="p2"></p>
 
+<div class="wrapper">
+ <div id="leftsidebar">
+  <ul id="menulist">
+   <li class="menuitem">Mendu Wada</li>
+   <li class="menuitem">Sambhar Wada</li>
+   <li class="menuitem">Sada Dosa</li>
+   <li class="menuitem">Masala Dosa</li>
+   <li class="menuitem">Mysore Masala Dosa</li>
+  </ul>
+  </div>
+  <div id="main">
+    <h2>Resize the browser window to see the effect! </h2>
+    <p> This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+  </div>
+  </div>
 </body>
+
 </html>
